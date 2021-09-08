@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../Components/Header'
 import Button from '../Components/Button'
+import {Link} from 'react-router-dom'
 import '../Styles/landing.css'
 import fish from '../Images/image1.png'
 import fish2 from '../Images/feature-fish.png'
@@ -201,7 +202,9 @@ function Landing() {
                 </div>
             </div>
         </div>
+        <Link to="/signup">
         <Button className="feature-register-btn" > Create an account </Button>
+        </Link>
         </section>
         </>
     )
