@@ -29,7 +29,7 @@ const handleChange = (event) => {
  return(
                <div>
                 <div>
-            <p><Link to="/">Back to Homepage</Link>.</p>
+            <p className=""><Link to="/">Back to Homepage</Link>.</p>
             <p> <img src={logo} alt="pondsec logo"/></p> 
             </div>
             <h2>Login</h2>
