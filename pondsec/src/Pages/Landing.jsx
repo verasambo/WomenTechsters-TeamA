@@ -205,6 +205,7 @@ function Landing() {
         <Link to="/signup">
         <Button className="feature-register-btn" > Create an account </Button>
         </Link>
+        <Button className="feature-register-btn" > Create an account  </Button>
         </section>
         </>
     )
