@@ -59,7 +59,7 @@ function Footer() {
                         </ul>
                            </div>
                            <div className="footer_socials">
-                               <h5>Social Media</h5>
+                               <h5>Social Media </h5>
                                <div className="social-media_links">
                                <div className="social_link">
                         <i className="fab fa-facebook-f"></i>
