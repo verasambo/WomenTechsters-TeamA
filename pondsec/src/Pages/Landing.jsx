@@ -201,7 +201,7 @@ function Landing() {
                 </div>
             </div>
         </div>
-        <Button className="feature-register-btn" > Create an account </Button>
+        <Button className="feature-register-btn" > Create an account  </Button>
         </section>
         </>
     )
