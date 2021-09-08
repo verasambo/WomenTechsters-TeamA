@@ -1,25 +1,27 @@
 import { Link } from 'react-router-dom'
 import '../Styles/footer.css'
 import Button from './Button'
+import logo from '../Images/logo.png'
 
 function Footer() {
     return (
         <div className="footer">
             <div className="footer_form">
-                <h2>Subscribe to our newsletter </h2>
+                <h2>Subscribe to our newsletter</h2>
                 <input type="text"
-                    placeholder="Enter your mail"
-                    className="subcribe__email"
+                    placeholder="Enter your email"
+                    className="subscribe__input"
                 />
-<Button className="subscribe__btn">Subscribe</Button>
+                <Button className="subscribe__btn">Subscribe</Button>
             </div>
             <div className="footer_bottom">
                 <div className="logo">
-                    Pondsec
+                   <img src={logo} alt="pondsec logo" />
                 </div>
                 <div className="footer_list">
                     <div className="footer_address">
-
+                    <p>Women Techsters</p>
+                    <p>Team A</p>
                     </div>
                     <div className="footer_nav_group">
                            <div className="footer_nav">
@@ -57,13 +59,17 @@ function Footer() {
                         </ul>
                            </div>
                            <div className="footer_socials">
-                        <div className="social_link">
+                               <h5>Social Media</h5>
+                               <div className="social-media_links">
+                               <div className="social_link">
                         <i className="fab fa-facebook-f"></i>
                         </div>
                         <div className="social_link"><i className="fab fa-twitter"></i></div>
                         <div className="social_link">
                         <i className="fab fa-instagram"></i>
                         </div>
+                               </div>
+                       
                            </div>
                     </div>
 
