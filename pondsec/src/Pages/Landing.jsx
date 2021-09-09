@@ -8,6 +8,7 @@ import fish2 from '../Images/feature-fish.png'
 import fish3a from '../Images/feature-fish1a.png'
 import fish3b from '../Images/feature-fish1b.png'
 
+
 function Landing() {
     return (
         <>
@@ -20,7 +21,7 @@ function Landing() {
                 <p className="sub-text">
                     Increased fish output while minimising your operational cost
                 </p>
-                <Button className="register-btn">Get Started</Button>
+                <Button className="register-btn"><Link to='/signup'>Get Started</Link></Button>
             </div>
          
         </section>
@@ -205,7 +206,7 @@ function Landing() {
         <Link to="/signup">
         <Button className="feature-register-btn" > Create an account </Button>
         </Link>
-        <Button className="feature-register-btn" > Create an account  </Button>
+        
         </section>
         </>
     )

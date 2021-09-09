@@ -1,9 +1,9 @@
 import React, {useState} from 'react'
 import logo from '../Images/logo.png'
 import { Link } from 'react-router-dom'
-import validation from './validation'
-import logo from '../Images/logo.png'
-import BackgroundImage from '../Images/background.jpg'
+import validation from './validations'
+
+
 
 const LoginForm = () => {
 
@@ -53,7 +53,7 @@ const handleChange = (event) => {
                 <p>
                     <button onClick={handleFormSubmit}>Login</button>
                 </p>
-                <p>No Account Yet? <Link to="/signup">Create an account</Link>.</p>
+                <p>No Account Yet? <Link to="/signup">Create an account</Link></p>
                 
 
             </form>

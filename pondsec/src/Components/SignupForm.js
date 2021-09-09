@@ -1,5 +1,7 @@
 import React, {useState} from "react";
-import validation from "./validation";
+import validation from "./validations";
+import { Link } from 'react-router-dom'
+import logo from '../Images/logo.png'
 
 const SignupForm = () => {
 
