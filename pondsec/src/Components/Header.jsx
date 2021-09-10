@@ -16,7 +16,7 @@ function Header() {
                         <Link to="/home" className="nav-link">Home</Link>
                     </li>
                     <li>
-                        <Link to="/home" className="nav-link">About</Link>
+                        <Link to="/" className="nav-link">About</Link>
                     </li>
                     <li>
                         <Link to="/home" className="nav-link">Features</Link>
@@ -26,7 +26,7 @@ function Header() {
             
             <div className="header-btn">
                 <Link to="/login" className="nav-link">Login</Link>
-                    <Button className="register-btn"> Create an account </Button>
+                    <Button className="register-btn"><Link to='/signup'>Create an account</Link></Button>
 
                 </div>
             
