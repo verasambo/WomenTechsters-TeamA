@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import logo from '../Images/logo.png'
 import { Link } from 'react-router-dom'
 import validation from './validations'
+import '../Styles/Reg.css'
+import backgroundImage from '../Images/background.jpg'
 
 
 
@@ -27,38 +29,51 @@ const handleChange = (event) => {
   setErrors(validation(values));
  };
  return(
-               <div>
-                <div>
-            <p className=""><Link to="/">Back to Homepage</Link>.</p>
-            <p> <img src={logo} alt="pondsec logo"/></p> 
+               <div className="container" style={{
+                   background: `url(${backgroundImage})`,
+                   backgroundPosition: `center`,
+                   backgroundSize: `cover`,
+                   backgroundRepeat: `no-repeat`
+                   }}>
+                       <div className="app-wrapper">
+
+                   <div className="home-log">
+            <p className="app-home"><Link to="/">Back to Homepage</Link></p>
+
+            <p className="app-logo"> <img src={logo} alt="pondsec logo"/></p> 
+
             </div>
-            <h2>Login</h2>
+
+            <h2 className="title">Login</h2>
             <form action="/login">
                 <p>
-                    <label> Email </label><br/>
-                    <input type="text" name="email" value={values.email} onChange={handleChange}/>
+                    <label className="email"> Email </label><br/>
+                    <input className="input" type="text" name="email" value={values.email} onChange={handleChange}/>
                     {errors.email && <p className="error"> {errors.email}</p>}
                 </p>
+
                 <p>
-                    <label>Password</label><br/>
-                    <input type="password" name="password" value={values.password} onChange={handleChange}/>{errors.password && <p className="error"> {errors.password}</p>}
+                    <label className="password">Password</label><br/>
+                    <input className="input" type="password" name="password" value={values.password} onChange={handleChange}/>{errors.password && <p className="error"> {errors.password}</p>}
 
                     <br/>
-                    <input type="checkbox" name="checkbox" id="checkbox" required /><span> Remember Me
+                    <input type="checkbox" name="checkbox" id="checkbox" required /> <span> Remember Me
                     
                     </span>
-                    <Link to="#"><label>Forget password?</label></Link>
+                    <Link to="#"><label className="forgot-password">Forgot password?</label></Link>
                     </p>
 
                 <p>
-                    <button onClick={handleFormSubmit}>Login</button>
+                    <button className="submit" onClick={handleFormSubmit}>Login</button>
                 </p>
-                <p>No Account Yet? <Link to="/signup">Create an account</Link></p>
+                <p className="account-check">No account yet? <Link to="/signup">Create one</Link></p>
                 
 
             </form>
+            </div>
             
         </div>
+        
  );
 }
 
