@@ -16,10 +16,10 @@ function Header() {
                         <Link to="/home" className="nav-link">Home</Link>
                     </li>
                     <li>
-                        <Link to="/home" className="nav-link">About</Link>
+                        <Link to="/about" className="nav-link">About</Link>
                     </li>
                     <li>
-                        <Link to="/home" className="nav-link">Features</Link>
+                        <Link to="/features" className="nav-link">Features</Link>
                     </li>
                 </ul>
             </nav>
