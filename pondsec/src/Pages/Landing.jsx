@@ -10,7 +10,6 @@ import user1 from '../Images/user1.png'
 import user2 from '../Images/user2.png'
 import vectorimg from '../Images/vector.png'
 // import fish3b from '../Images/feature-fish1b.png'
-import {Link } from 'react-router-dom'
 import Footer from '../Components/Footer'
 
 
