@@ -1,0 +1,110 @@
+*{
+  margin:0;
+  padding:0;
+  
+}
+
+.container{
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  
+}
+
+.app-wrapper{
+  background-color: #fff;
+  min-width: 350px;
+  min-height: 500px;
+  padding: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  
+}
+
+.home-log{
+  
+  overflow: hidden;
+  margin: 30px 0px 15px 0px;
+  
+}
+.app-home{
+  margin: 0;
+  display: inline;
+  float: left;
+}
+
+.app-logo{
+  margin: 0;
+  display: inline;
+  float: right;
+
+}
+
+.app-logo img {
+  width: 2em;
+    height: auto;
+}
+    
+.title{
+  margin: 20px 0px 10px 0px;
+  font-weight: 300;
+}
+
+.email,
+.password{
+   margin: 10px;
+  color: #969292;
+  font-size: 16px;
+
+}
+
+.input{
+  height: 32px;
+  font-size: 20px;
+  outline: none;
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+  
+  margin-bottom: 10px;
+}
+
+#checkbox {
+    width: 1rem
+}
+
+.error{
+  color: red;
+}
+
+.submit{
+  display: block;
+    width: 100%;
+    padding: .7rem;
+    border: none;
+    background: rgb(33, 102, 231);
+    color: #fff;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.submit:hover {
+    background: #333;
+    transition: all .5s
+}
+
+.forgot-password{
+  margin-left: 40px;
+
+}
+
+.account-check{
+  text-align: center;
+}
+
