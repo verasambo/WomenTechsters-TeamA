@@ -1,5 +1,5 @@
 .homepage__container {
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     background-color: #F9FAFB;
     display: flex;
@@ -8,6 +8,7 @@
 }
 
 .homepage__side {
+    height: 100vh;
     width: 15%;
     display: flex;
     flex-direction: column;
@@ -98,17 +99,17 @@
 }
 
 .homepage__pond-data {
-    width: 65%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    margin: .5rem;
+    margin: 1rem;
 }
 
 .homepage__pond-weight,
 .homepage__pond-distance {
-    width: 20rem;
-    height: 11rem;
+    width: 25rem;
+    height: 12rem;
     background-color: #fff;
     padding: 1rem;
     display: flex;
@@ -173,15 +174,15 @@
 }
 
 .homepage__pond-data2 {
-    width: 81%;
+    width: 98%;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    margin: .5rem;
+    margin: 1rem;
 }
 
 .homepage__pond-ph {
-    width: 30rem;
+    width: 38rem;
     height: 13rem;
     background-color: #fff;
     padding: 1rem;
@@ -197,7 +198,6 @@
     position: absolute;
     top: 0;
     right: 0rem;
-    /* height: 5rem; */
     overflow: hidden;
 }
 
@@ -251,9 +251,9 @@
 
 .ph-info {
     display: flex;
-    width: 100%;
+    width: 90%;
     font-family: 'Open Sans', sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     margin: 2rem 1rem;
     justify-content: space-between;
 }
@@ -285,4 +285,45 @@
 
 .temperature_scale img::after {
     content: "27&deg;";
+}
+
+.homepage__pond-activity {
+    width: 95%;
+    margin: 1rem auto;
+}
+
+.homepage__pond-activity h2 {
+    margin: .5rem 0;
+    font-size: 20px;
+}
+
+.pond-activity {
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0px 1px 8px #c4c4d629;
+    border-radius: 8px;
+}
+
+.pond-activity-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+    border-top: .1px solid #212353;
+    padding: .3rem;
+}
+
+.pond-activity-data p {
+    font-size: 14px;
+}
+
+.data_header {
+    margin-bottom: .8rem;
+    text-align: center;
+    border-top: none;
+}
+
+.data_header h4 {
+    font-size: 16px;
 }
