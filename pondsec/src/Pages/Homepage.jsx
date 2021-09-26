@@ -61,6 +61,7 @@ function Homepage() {
                 </div>
           </div>
         <div className="homepage__pond-data2">
+
             <div className="homepage__pond-ph">
                <div className="homepage-mini-header">
                     <h6>Pond pH Level</h6>
@@ -93,7 +94,75 @@ function Homepage() {
             </div>
         </div>
       
+        <div className="homepage__pond-activity">
+            <h2>Activity</h2>
+            <div className="pond-activity">
+                <div className="pond-activity-data data_header">
+               
+                    <h4>S/N</h4>
+                     <h4>Type</h4>
+                     <h4>Description</h4>
+                     <h4>Time</h4>
+                     <h4>Date</h4>
+               </div>
+                <div className="pond-activity-data">
+                    <p>1</p>
+                    <p>Motion</p>
+                    <p>Lorem ipsum dolor sit amet. cons...</p>
+                    <p>5:00</p>
+                    <p>05/9/2021</p>
+                </div>
+                <div className="pond-activity-data">
+                    <p>2</p>
+                    <p>Camera</p>
+                    <p>Lorem ipsum dolor sit amet. cons...</p>
+                    <p>22:00</p>
+                    <p>05/9/2021</p>
+                </div>
+                <div className="pond-activity-data">
+                <p>3</p>
+                    <p>Proximity</p>
+                    <p>Lorem ipsum dolor sit amet. cons...</p>
+                    <p>12:00</p>
+                    <p>05/8/2021</p>
+
+                </div>
+                <div className="pond-activity-data">
+                <p>4</p>
+                    <p>Motion</p>
+                    <p>Lorem ipsum dolor sit amet. cons...</p>
+                    <p>15:00</p>
+                    <p>05/8/2021</p>
+
+
+                </div>
+                <div className="pond-activity-data">
+                <p>5</p>
+                    <p>Motion</p>
+                    <p>Lorem ipsum dolor sit amet. cons...</p>
+                    <p>3:00</p>
+                    <p>05/7/2021</p>
+
+
+                </div>
+                <div className="pond-activity-data">
+                <p>6</p>
+                    <p>Motion</p>
+                    <p>Lorem ipsum dolor sit amet. cons...</p>
+                    <p>2:00</p>
+                    <p>05/7/2021</p>
+                </div>
+                <div className="pond-activity-data">
+                <p>7</p>
+                    <p>Motion</p>
+                    <p>Lorem ipsum dolor sit amet. cons...</p>
+                    <p>1:00</p>
+                    <p>05/5/2021</p>
+                </div>
+            </div>
         </div>
+        </div>
+
         </div>
     )
 }
