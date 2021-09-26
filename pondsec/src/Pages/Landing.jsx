@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from '../Components/Header'
 import Button from '../Components/Button'
+import {Link} from 'react-router-dom'
 import '../Styles/landing.css'
 import fish from '../Images/image1.png'
 import fish2 from '../Images/feature-fish.png'
@@ -9,8 +10,8 @@ import user1 from '../Images/user1.png'
 import user2 from '../Images/user2.png'
 import vectorimg from '../Images/vector.png'
 // import fish3b from '../Images/feature-fish1b.png'
-import {Link } from 'react-router-dom'
 import Footer from '../Components/Footer'
+
 
 function Landing() {
     return (
@@ -24,7 +25,7 @@ function Landing() {
                 <p className="sub-text">
                     Increased fish output while minimising your operational cost
                 </p>
-                <Button className="register-btn">Get Started</Button>
+                <Button className="register-btn"><Link to='/signup'>Get Started</Link></Button>
             </div>
          
         </section>
@@ -212,7 +213,10 @@ function Landing() {
                 </div>
             </div>
         </div>
+        <Link to="/signup">
         <Button className="feature-register-btn" > Create an account </Button>
+        </Link>
+        
         </section>
         <section className="testimonials">
         <div className="dots test-top-dots">
