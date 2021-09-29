@@ -1,7 +1,4 @@
 import '../Styles/homepage.css'
-
-import bell from '../Images/bell (1).png'
-import user from '../Images/homepage-user.png'
 import arrow from '../Images/arrow.png'
 import greenArrow from '../Images/growth-arrow.png'
 import activityTracker from '../Images/activity-tracker.png'
@@ -11,26 +8,23 @@ import cloudImage2 from '../Images/cloud2.png'
 import phScale from '../Images/ph-scale.png'
 import waterScale from '../Images/water-temp.png'
 import SideNav from '../Components/SideNav'
+import HomePageHeader from '../Components/HomePageHeader'
+import { Link } from 'react-router-dom'
+import pondImg from '../Images/pond-img.png'
 
 function Homepage() {
     return (
         <div className="homepage__container">
-      <SideNav/>
-        <div className="homepage__main">
-          <div className="homepage__main-top">
-              <div className="homepage__user">
-                  <img src={bell} alt="notification alert" />
-                  <img src={user} alt="user" />
-                  <p>Jane Doe</p>
-              </div>
-          </div>
+            <SideNav/>
+            <div className="homepage__main">
+          <HomePageHeader />
           <div className="homepage__intro">
               <div className="homepage__intro-name">
               <h2> Hello, <span className="name">Jane</span></h2>
               <p>Manage the affairs of your fish pond</p>
               </div>
               <div className="homepage__intro">
-                  <button className="intro-btn">Add Pond</button>
+                  <button className="intro-btn"> <Link className="link-btn" to="/pond"> Add Pond </Link></button>
               </div>
           </div>
           <div className="homepage__pond-data">
@@ -51,13 +45,16 @@ function Homepage() {
                 <div className="homepage-mini-header">
                     <h6>Distance to pond</h6>
                 </div>
-                <div className="distance">
+                <div className="pond-distance">
+               <div className="distance">
                     <img src={activityTracker} alt="activity"/>
                     <p>No activity</p>
                 </div>
                 <div className="homepage__pond-image">
-                    <img src={pondImage} alt="" />
+                    <img src={pondImg} alt="pond" className="pondImgOut"/>
+                    <img src={pondImage} alt="pond" className="pondImg"/>
                 </div>
+               </div>
                 </div>
           </div>
         <div className="homepage__pond-data2">
