@@ -68,10 +68,19 @@
   width: 100%;
   padding: 12px 20px;
   box-sizing: border-box;
-  border: 2px solid black;
+  border: 1px solid rgb(73, 73, 73);
   border-radius: 4px;
   
   margin-bottom: 10px;
+}
+
+.textarea{
+  font-size: 20px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border:1px solid rgb(73, 73, 73) ;
+  border-radius: 4px;
+  margin-bottom: 15px;
 }
 
 #checkbox {
@@ -92,6 +101,24 @@
     border-radius: 3px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.sub_btn{
+  display: block;
+    width: 100%;
+    padding: .7rem;
+    border: #333;
+    color: rgb(19, 17, 17);
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.sub_btn:hover{
+  color: rgb(33, 102, 231);
+  background: #969292;
+  border-color: rgb(33, 102, 231);
+   transition: all .5s linear;
 }
 
 .submit:hover {

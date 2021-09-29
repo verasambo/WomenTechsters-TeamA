@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import logo from '../Images/logo.png'
 import '../Styles/Reg.css'
 import backgroundImage from '../Images/background.jpg'
+import { FaAngleLeft } from 'react-icons/fa'
 
 const SignupForm = () => {
 
@@ -38,7 +39,7 @@ const handleChange = (event) => {
                    <div className="app-wrapper">
 
                 <div className="home-log">
-            <p className="app-home"><Link to="/"> Back to Homepage</Link>.</p>
+            <p className="app-home"><Link to="/"> <FaAngleLeft/> Back to Homepage</Link>.</p>
             <p className="app-logo"> <img src={logo} alt="pondsec logo"/></p>
 
             </div>
