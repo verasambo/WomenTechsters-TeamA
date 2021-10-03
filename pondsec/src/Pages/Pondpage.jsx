@@ -19,6 +19,8 @@ import inflow from '../Images/vector-green.png'
 import outflow from '../Images/vector-red.png'
 import pHlogo from '../Images/VectorpH.png'
 import sideImgC from '../Images/side-design(long).png'
+import DistanceChart from '../Components/DistanceChart'
+import roundpH from '../Images/Ellipse 123.svg'
 
 
 function Pondpage() {
@@ -36,7 +38,7 @@ function Pondpage() {
               </div>
             </div>
               <div className="homepage_button">
-                  <button className="intro-btn"> <Link className="link-btn" to="/pond"> Add Pond </Link></button>
+                  <button className="intro-btn"> <Link className="link-btn" to="/pond/add"> Add Pond </Link></button>
               </div>
             </div>
             <div className="pondpage">
@@ -117,6 +119,8 @@ function Pondpage() {
                             <h6>Distance to pond</h6></div>
                         <button className="duration">Monthly <span className="expand"> <img src={arrow} alt="expand" /></span></button>
                     </div> 
+                    <div className="distance-chart"></div>
+                    <DistanceChart />
                 </div>
             </div>
             <div className="pondpage-pondpH">
@@ -126,6 +130,14 @@ function Pondpage() {
                             <h6> <img src={pHlogo} alt="temp" className="mini-logo"/>pH Levels</h6></div>
                         <button className="duration">Monthly <span className="expand"> <img src={arrow} alt="expand" /></span></button>
                     </div>
+                    <div className="pH">
+                        <img src={roundpH} alt="" />
+                    </div>
+                    <ul className="ph-info">
+                            <li> A pH level  &lt;7 is acidic</li>
+                            <li>pH level of 7 is neutral</li>
+                            <li>pH level  &gt;7 is alkaline</li>
+                        </ul>
                     <img className="side_design" src={sideImgC} alt="deisgn"/>  
                </div>
             </div>

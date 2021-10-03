@@ -24,7 +24,7 @@ function Homepage() {
               <p>Manage the affairs of your fish pond</p>
               </div>
               <div className="homepage__intro">
-                  <button className="intro-btn"> <Link className="link-btn" to="/pond"> Add Pond </Link></button>
+                  <button className="intro-btn"> <Link className="link-btn" to="/pond/add"> Add Pond </Link></button>
               </div>
           </div>
           <div className="homepage__pond-data">

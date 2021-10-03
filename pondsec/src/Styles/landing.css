@@ -131,6 +131,7 @@
 .feature-register-btn {
     background: #3D86C5;
     color: #FCFCFD;
+    margin: auto;
 }
 
 .feature-text {
@@ -154,6 +155,7 @@
     margin-top: 1.5rem;
     display: flex;
     justify-content: space-between;
+    background: url('../Images/Rectangle\ 39.svg');
 }
 
 .feature_figure {

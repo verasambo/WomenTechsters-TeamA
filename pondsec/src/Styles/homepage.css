@@ -319,7 +319,7 @@
 }
 
 .ph-info li::marker {
-    color: red;
+    color: #C53D89;
 }
 
 .homepage__water-temp {
@@ -424,13 +424,13 @@
 }
 
 .pondpage-pondpH {
-    width: 33%;
+    width: 35%;
     padding: 1.5rem;
 }
 
 .pondpage-pondpH .pondpH {
-    width: 18rem;
-    height: 30rem;
+    width: 21rem;
+    height: 35rem;
     background-color: #fff;
     padding: 1rem;
     display: flex;
@@ -443,7 +443,7 @@
 }
 
 .pondpH .side_design {
-    height: 100%;
+    height: 70%;
     position: absolute;
     right: 0;
     top: 0;
@@ -464,8 +464,12 @@
 }
 
 .distance-graph {
-    width: 30rem;
-    height: 18rem;
+    width: 40rem;
+    height: 25rem;
+}
+
+.distance-chart {
+    width: 37rem;
 }
 
 .pond-data-top {
@@ -552,4 +556,34 @@
     position: absolute;
     left: .25rem;
     top: -.1rem;
+}
+
+.pH {
+    margin: 2rem;
+    position: relative;
+    width: 20rem;
+}
+
+.pH::before {
+    position: absolute;
+    content: url('../Images/traingle-vector.svg');
+    top: 30%;
+    left: -5%;
+}
+
+.ph::after {
+    position: absolute;
+    content: '0';
+    top: 10%;
+}
+
+.pondpH .ph-info {
+    font-size: 14px;
+    margin: 2rem 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pondpH .ph-info li {
+    margin: .5rem 0;
 }
