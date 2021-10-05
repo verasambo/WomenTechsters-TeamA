@@ -6,7 +6,7 @@ import '../Styles/Reg.css'
 import backgroundImage from '../Images/background.jpg'
 
 
-const Features = () => {
+const AddPondThree = () => {
 
  const [values, setValues] = useState({
   name:"",
@@ -32,26 +32,29 @@ const handleChange = (event) => {
                    }} >
       <div className="app-wrapper">
              <h2 className="title">Add Pond</h2>
-            <form action="/features">
+            
+            <form action="/add_pond">
+
+             <p>
+                    <Link to ="/microcontroller"><button className="sub_btn" onClick={handleFormSubmit}> <FaWifi/>                                       Connect Micro-controller</button> </Link>
+                </p>
 
                 <p>
-                    <label> Farm Name</label><br/>
-                    <input type="text" className="input" name="name" placeholder="Enter pond name" value={values.name} onChange={handleChange}/>
+                    <button className="sub_btn" onClick={handleFormSubmit}> <FaSquare/>                                        Controller Serial Noooooooo </button>
                 </p>
 
-                <p>
-                    <label>Number of Ponds</label><br/>
-                    <input type="number" className="input" name="name" placeholder="Enter number of ponds" value={values.name} onChange={handleChange}/>
+                <p> Sensors
+                 <li>Camera Sensor </li>
+                 <li>Barrier Sensor </li>
+                 <li> Temperature Sensor</li>
+                 <li> Flow Sensor </li>
+
                 </p>
+
+
                 <p>
-                    <label>Description</label><br/>
-                    <textarea placeholder="Enter pond description"  cols="30" rows="5" className="textarea"> </textarea>
-                    </p>
-                    
-                <p>
-                    <button className="submit" onClick={handleFormSubmit}>Next</button>
+                    <button className="submit" onClick={handleFormSubmit}>Add Pond</button>
                 </p>
-                
 
             </form>
             
@@ -60,4 +63,4 @@ const handleChange = (event) => {
     )
 }
 
-export default Features;
+export default AddPondThree;

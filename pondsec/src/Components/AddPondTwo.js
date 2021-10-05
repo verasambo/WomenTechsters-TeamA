@@ -6,7 +6,7 @@ import '../Styles/Reg.css'
 import backgroundImage from '../Images/background.jpg'
 
 
-const Features = () => {
+const AddPondTwo = () => {
 
  const [values, setValues] = useState({
   name:"",
@@ -32,32 +32,32 @@ const handleChange = (event) => {
                    }} >
       <div className="app-wrapper">
              <h2 className="title">Add Pond</h2>
-            <form action="/features">
+            <form action="/add-pond">
 
+            <p>
+                    <Link to ="/microcontroller"><button className="sub_btn" onClick={handleFormSubmit}> <FaWifi/>                                       Connect Micro-controller</button> </Link>
+                </p>
+
+               <hr/>
+
+               
                 <p>
-                    <label> Farm Name</label><br/>
+                    <label>Device ID</label><br/>
                     <input type="text" className="input" name="name" placeholder="Enter pond name" value={values.name} onChange={handleChange}/>
                 </p>
 
-                <p>
-                    <label>Number of Ponds</label><br/>
-                    <input type="number" className="input" name="name" placeholder="Enter number of ponds" value={values.name} onChange={handleChange}/>
-                </p>
-                <p>
-                    <label>Description</label><br/>
-                    <textarea placeholder="Enter pond description"  cols="30" rows="5" className="textarea"> </textarea>
-                    </p>
-                    
-                <p>
-                    <button className="submit" onClick={handleFormSubmit}>Next</button>
-                </p>
-                
 
-            </form>
+
+                <p>
+                    <button className="submit" onClick={handleFormSubmit}>Add Pond</button>
+                </p>
+               </form>
+
+                
             
         </div>
         </div>
     )
 }
 
-export default Features;
+export default AddPondTwo;
