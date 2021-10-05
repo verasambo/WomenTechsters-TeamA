@@ -5,8 +5,12 @@ import Homepage from './Pages/Homepage'
 import Landing from './Pages/Landing';
 import SignupForm from './Components/SignupForm';
 import LoginForm from './Components/LoginForm';
+
 import Features from './Components/Features';
 import Microcontoller from './Components/Microcontroller';
+
+import Pondpage from './Pages/Pondpage';
+
 
 
 function App() {
@@ -19,8 +23,12 @@ function App() {
           <Route exact path='/home' component={Homepage} />
           <Route exact path="/signup" component={SignupForm} />
           <Route exact path="/login" component={LoginForm} />
+
           <Route  exact path="/features"  component={Features}/>
           <Route exact path="/microcontroller" component={Microcontoller}/> 
+
+          <Route exact path="/pond" component={Pondpage} />
+
 
         </Switch>
 

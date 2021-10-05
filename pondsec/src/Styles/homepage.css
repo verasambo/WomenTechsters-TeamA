@@ -1,5 +1,5 @@
 .homepage__container {
-    height: 100vh;
+    /* height: 100vh; */
     width: 100%;
     background-color: #F9FAFB;
     display: flex;
@@ -8,6 +8,7 @@
 }
 
 .homepage__side {
+    height: 100vh;
     width: 15%;
     display: flex;
     flex-direction: column;
@@ -75,12 +76,17 @@
     padding: 1rem;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .homepage__intro-name h2 {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
     margin: .4rem 0;
+}
+
+.homepage__intro-name .bold_text {
+    font-weight: bold;
 }
 
 .homepage__intro-name .name {
@@ -97,18 +103,22 @@
     border-radius: .3rem;
 }
 
+.link-btn {
+    color: #FCFCFD;
+}
+
 .homepage__pond-data {
-    width: 65%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    margin: .5rem;
+    margin: 1rem;
 }
 
 .homepage__pond-weight,
 .homepage__pond-distance {
-    width: 20rem;
-    height: 11rem;
+    width: 25rem;
+    height: 12rem;
     background-color: #fff;
     padding: 1rem;
     display: flex;
@@ -129,9 +139,10 @@
 
 .homepage-mini-header h6 {
     font-size: 15px;
+    display: flex;
 }
 
-.homepage__pond-weight .pond-weight {
+.pond-weight {
     display: flex;
     margin-top: 2rem;
     align-self: center;
@@ -154,12 +165,18 @@
 }
 
 .homepage__pond-distance {
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
 }
 
-.homepage__pond-distance .distance {
+.pond-distance {
+    display: flex;
+}
+
+.pond-distance .distance {
     margin-top: 1.3rem;
+    font-size: 13px;
+    width: 25%;
 }
 
 .homepage__pond-distance .distance p {
@@ -167,21 +184,65 @@
 }
 
 .homepage__pond-image {
+    position: relative;
+    width: 75%;
+}
+
+.homepage__pond-image img {
+    width: 100%;
+}
+
+.homepage__pond-image .pondImgOut {
     position: absolute;
+    top: 0;
+    right: -1rem;
+}
+
+.homepage__pond-image .pondImg {
+    position: absolute;
+    top: 1rem;
+    width: 90%;
+    right: -.7rem;
+}
+
+.homepage__pond-image .round-circle {
+    position: absolute;
+    top: 4.5rem;
+    left: 6.5rem;
+    background-color: #fff;
+    width: 3.3rem;
+    height: 3.3rem;
+    border-radius: 50%;
+    box-shadow: -10px -10px 30px #aeaec066;
+}
+
+.homepage__pond-image .round-circle .alarmContainer {
+    position: relative;
+}
+
+.round-circle .alarmContainer .alarmCont {
+    position: absolute;
+    width: 3rem;
     right: 0;
-    top: 2rem;
+}
+
+.round-circle .alarmContainer .alarm {
+    position: absolute;
+    width: 1rem;
+    top: 1rem;
+    left: 1rem;
 }
 
 .homepage__pond-data2 {
-    width: 81%;
+    width: 98%;
     display: flex;
     justify-content: space-between;
     padding: 1rem;
-    margin: .5rem;
+    margin: 1rem;
 }
 
 .homepage__pond-ph {
-    width: 30rem;
+    width: 38rem;
     height: 13rem;
     background-color: #fff;
     padding: 1rem;
@@ -197,7 +258,6 @@
     position: absolute;
     top: 0;
     right: 0rem;
-    /* height: 5rem; */
     overflow: hidden;
 }
 
@@ -251,9 +311,9 @@
 
 .ph-info {
     display: flex;
-    width: 100%;
+    width: 90%;
     font-family: 'Open Sans', sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     margin: 2rem 1rem;
     justify-content: space-between;
 }
@@ -285,4 +345,211 @@
 
 .temperature_scale img::after {
     content: "27&deg;";
+}
+
+.homepage__pond-activity {
+    width: 95%;
+    margin: 1rem auto;
+}
+
+.homepage__pond-activity h2 {
+    margin: .5rem 0;
+    font-size: 20px;
+}
+
+.pond-activity {
+    width: 100%;
+    background-color: #fff;
+    padding: 1rem;
+    box-shadow: 0px 1px 8px #c4c4d629;
+    border-radius: 8px;
+}
+
+.pond-activity-data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5rem;
+    border-top: .1px solid #212353;
+    padding: .3rem;
+}
+
+.pond-activity-data p {
+    font-size: 14px;
+}
+
+.data_header {
+    margin-bottom: .8rem;
+    text-align: center;
+    border-top: none;
+}
+
+.data_header h4 {
+    font-size: 16px;
+}
+
+.pond_name,
+.export_btn {
+    padding: .3rem;
+    width: 6.5rem;
+    margin: .6rem;
+}
+
+.pond_name .expand img {
+    width: .8rem;
+    object-fit: contain;
+}
+
+.pond_name {
+    border: .5px solid #212353;
+    color: #212353;
+}
+
+.export_btn {
+    border: .5px solid #3D86C5;
+    color: #3D86C5;
+}
+
+.pondpage {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pondpage_pond-data {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1.5rem;
+    width: 65%;
+}
+
+.pondpage-pondpH {
+    width: 33%;
+    padding: 1.5rem;
+}
+
+.pondpage-pondpH .pondpH {
+    width: 18rem;
+    height: 30rem;
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 8px #c4c4d629;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.pondpH .side_design {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.pond-data {
+    width: 20rem;
+    height: 12rem;
+    background-color: #fff;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 1px 8px #c4c4d629;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+.distance-graph {
+    width: 30rem;
+    height: 18rem;
+}
+
+.pond-data-top {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.pond-data p {
+    font-size: 14px;
+}
+
+.homepage-mini-header h6 .mini-logo {
+    width: .8rem;
+    margin-right: .5rem;
+    align-self: center;
+}
+
+.pond-data-top .duration {
+    padding: .25rem;
+    width: 4rem;
+    margin: .6rem;
+    border: .5px solid #212353;
+    color: #212353;
+    font-size: 11px;
+}
+
+.pond-data-top .duration .expand img {
+    width: .6rem;
+    object-fit: contain;
+}
+
+.pond-data .side_design {
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.pond-data .temperature_scale {
+    /* background-color: teal; */
+    position: relative;
+}
+
+.temperature_scale .waterScale {
+    position: absolute;
+    width: 100%;
+}
+
+.temperature_scale .waterScale2 {
+    position: absolute;
+    width: 80%;
+    right: 0;
+    top: -0.1rem;
+}
+
+.pond-control {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.pond-control .flows .flow {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    border: 1px solid #F0F0F3;
+    background-color: #F0F0F3;
+    position: relative;
+    margin-bottom: .6rem;
+}
+
+.pond-control .flows .flow img {
+    position: absolute;
+    top: 1rem;
+    left: .89rem;
+}
+
+.pond-control .flows .flow .red-circle {
+    width: 2.8rem;
+    position: absolute;
+    left: .25rem;
+    top: -.1rem;
 }
